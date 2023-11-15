@@ -1,0 +1,24 @@
+#!/bin/sh
+
+export NIXPKGS_ALLOW_UNFREE=1
+
+tmux new-session -s hecker   -n vpn -d
+tmux source .tmux.conf
+
+tmux new-window  -t hecker:2 -n editor
+tmux new-window  -t hecker:3 -n t1
+tmux new-window  -t hecker:4 -n t2
+tmux new-window  -t hecker:5 -n t3
+tmux new-window  -t hecker:6 -n files
+tmux new-window  -t hecker:7 -n git
+
+tmux send-keys -t 'vpn' 'nix develop' Enter
+#tmux send-keys -t 'editor' 'nix develop' Enter
+#tmux send-keys -t 't1' 'nix develop' Enter
+#tmux send-keys -t 't2' 'nix develop' Enter
+#tmux send-keys -t 't3' 'nix develop' Enter
+#tmux send-keys -t 'files' 'nix develop' Enter
+#tmux send-keys -t 'git' 'nix develop' Enter
+
+tmux select-window -t hecker:1
+tmux -2 attach-session -t hecker

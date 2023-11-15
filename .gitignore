@@ -1,0 +1,7 @@
+*
+!*/
+
+# track files
+!flake.nix
+!start
+!.gitignore
