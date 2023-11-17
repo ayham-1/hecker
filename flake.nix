@@ -18,6 +18,8 @@
 
                     nativeBuildInputs = with pkgs; [
                         clang
+                        jdk
+                        jre8
                         cmake
                         pkg-config
                         ninja
@@ -38,6 +40,9 @@
                         wireshark
                         dirb
                         burpsuite
+                        subfinder
+                        amass
+                        zap
 
                         man
                         man-pages

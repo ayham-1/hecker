@@ -3,5 +3,6 @@
 
 # track files
 !flake.nix
+!flake.lock
 !start
 !.gitignore

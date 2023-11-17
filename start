@@ -11,6 +11,7 @@ tmux new-window  -t hecker:4 -n t2
 tmux new-window  -t hecker:5 -n t3
 tmux new-window  -t hecker:6 -n files
 tmux new-window  -t hecker:7 -n git
+tmux new-window  -t hecker:8 -n runner
 
 tmux send-keys -t 'vpn' 'nix develop' Enter
 #tmux send-keys -t 'editor' 'nix develop' Enter
