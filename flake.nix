@@ -35,7 +35,9 @@
                         nmap
                         john
                         sqlite
-                        python312
+                        python311
+                        python311Packages.pip
+                        pipx
                         exploitdb
                         wireshark
                         dirb
@@ -43,6 +45,11 @@
                         subfinder
                         amass
                         zap
+                        nuclei
+                        gobuster
+                        ghidra
+                        wpscan
+                        webanalyze
 
                         man
                         man-pages
@@ -54,6 +61,8 @@
                     shellHook = ''
                         export PS1='[\#][$?] \[\e[2m\]\t \[\e[0;1;3m\]hecker\[\e[0m\]> '
                         alias ide="nix run github:ayham-1/ide"
+                        python3 -m venv .venv
+                        source .venv/bin/activate
                     '';
             };
         };
