@@ -29,6 +29,7 @@
                         toybox
                         netcat
                         openvpn
+                        protonvpn-cli_2
 
                         metasploit
                         jadx
